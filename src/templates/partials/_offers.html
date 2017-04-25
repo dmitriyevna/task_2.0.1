@@ -1,0 +1,15 @@
+<!-- begin offers -->
+	<div class="offers">
+		<div class="offers__grid">
+			{% for value in depositOffers %}
+			<div class="offers__item">
+				<a href="#" class="title title_h3 title_color-blue">{{ value.title }}</a>
+				<div class="offers__textual">
+					<p>{{ value.info }}</p>
+				</div>
+				<a href="#" class="btn btn_angle">Замовити<span class="icon-icon_angle_right"></span></a>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+<!-- end offers -->

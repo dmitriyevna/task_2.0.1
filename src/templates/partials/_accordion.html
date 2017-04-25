@@ -1,0 +1,28 @@
+<!-- begin accordion -->
+	<div class="accordion">
+		{% for value in accordion %}
+
+			<div class="accordion__item">
+				
+				<h3 class="title title_h3 title_w-normal accordion__title icon-icon_plus">{{ value.title }}</h3>
+				<div class="accordion__item_hidden">
+					<div class="accordion__textual">
+							<p>
+								{{ value.textual }} <a href="#" class="accordion__learn-more">Дізнатися більше <span class="icon-icon_arrow-right"></span></a>
+							</p>	
+					</div>
+					<h4 class="title title_h4">Корисні посилання</h4>
+					<!-- begin useful-links -->
+					<div class="useful-links">
+					{% for link in value.links %}
+						<a href="{{ link.path }}" class="useful-links__item">{{ link.name }}</a>
+					{% endfor %}
+					</div>
+					<!-- end useful-links -->
+				</div>
+			
+			</div>
+
+		{% endfor %}
+	</div>
+<!-- end accordion -->

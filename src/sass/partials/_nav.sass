@@ -1,0 +1,28 @@
+.nav
+	margin-top: -8px;
+.nav__item
+	font-size: $nav_fs
+	letter-spacing:  0.02rem
+	margin: 20px 0px 20px 20px
+	position: relative
+	&:after
+		position: absolute
+		left: 0
+		bottom: -7px
+		content: ''
+		width: 0
+		height: 1px
+		background-color: $color_accent  
+	&:hover,
+	&.is-active
+		text-decoration: none 
+		color: $text-color
+	&.is-active:after
+		width: 100%
+	&:hover:after
+		width: 100%
+		transition: all ease-out 0.5s
+	+mq(0, map-get($mq-breakpoints, tablet))
+		display: block
+		text-align: center 
+		margin-left: 0 

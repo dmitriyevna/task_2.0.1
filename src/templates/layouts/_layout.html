@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% include './_head.html' %}
+</head>
+<body>
+	
+{% include './_header.html' %}
+{% block content %}{% endblock %}
+{% include './_footer.html' %}
+
+<!-- begin SCRIPTS -->
+{% for script in SCRIPTS %}
+	<script type="text/javascript" src="js/{{ script }}.js"></script>
+{% endfor %}
+<!-- end SCRIPTS -->
+</body>
+</html>

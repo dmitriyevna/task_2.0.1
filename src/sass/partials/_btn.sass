@@ -1,0 +1,25 @@
+.btn
+	display: inline-block
+	padding: 12px 36px
+	margin-right: 10px
+	font-family: Lato-Bold, Arial, sans-serif
+	-webkit-border-radius: $br 
+	border-radius: $br 
+	&:hover
+		text-decoration: none
+.btn_primary
+	background-color: $color_accent
+	color: #FFF
+.btn_angle
+	position: relative
+	@extend .btn_primary
+	padding-right: 44px
+	font-family: $ff_light
+	& > span
+		position: absolute
+		right: 20px
+		top: 0.5rem 
+		font-size: 1.8rem
+	&:hover
+		background-color: darken($color_accent, 4%)
+		

@@ -1,0 +1,19 @@
+.header
+	padding: 0 10px
+	margin: 0 18px 
+.header_top,
+.header_bottom
+	display: flex
+	flex-direction: row
+	-webkit-justify-content: space-between
+	justify-content: space-between
+	+mq(0, map-get($mq-breakpoints, desktop))
+		flex-direction: column
+.header_top
+	padding: 19px 0
+.header_bottom
+	margin: 7px 22px 62px;
+.header__wrapp
+	+mq(0, map-get($mq-breakpoints, desktop))
+		display: flex
+		flex-direction: column

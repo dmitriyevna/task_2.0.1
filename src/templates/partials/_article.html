@@ -1,0 +1,22 @@
+<!-- begin article -->
+	<article class="article acticle__{{title.toLowerCase()}}">
+		
+		<a href="#" class="title_before">Kredobank - </a>
+		<h2 class="title title_h2">{{ article.title }}</h2>
+		<div class="article__textual">
+			{% for value in article.textual %}
+			<p>
+				{{ value }}
+			</p>
+			{% endfor %}
+		</div>
+		<h3 class="title title_h3 title_w-normal">Переваги наших депозитів</h3>
+	<!-- begin list -->
+		<ul class="list list_marked">
+			<li class="list__item">Вклади у гривнях, доларах США або ЄВРО</li>
+			<li class="list__item">На строк від 1 дня до 20 років</li>
+			<li class="list__item">Отримання коштів у будь-якому банкоматі України - безкоштовно *</li>
+		</ul>
+	<!-- end list -->
+	</article>
+<!-- end article -->

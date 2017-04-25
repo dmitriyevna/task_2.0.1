@@ -1,0 +1,21 @@
+{
+  "name": "Task",
+  "version": "1.0.0",
+  "description": "Task 2",
+  "main": "index.js",
+  "author": "Yana Penkova",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^6.7.7",
+    "browser-sync": "^2.18.8",
+    "del": "^2.2.2",
+    "front-matter": "^2.1.2",
+    "gulp": "^3.9.1",
+    "gulp-data": "^1.2.1",
+    "gulp-imagemin": "^3.2.0",
+    "gulp-nunjucks-render": "^2.2.1",
+    "gulp-postcss": "^6.4.0",
+    "gulp-sass": "^3.1.0",
+    "nunjucks": "^3.0.0"
+  }
+}

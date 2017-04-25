@@ -1,0 +1,45 @@
+.accordion__item
+	display: block
+	border: 1px solid $grey-darken
+	padding: 23px 30px
+	border-radius: 4px
+	border-bottom-width: 0
+	cursor: pointer
+	&.js-visible 
+		.accordion__item_hidden
+			display: block
+		.accordion__title
+			color: $text-color
+			&:before
+				content: '\e115'
+			
+	&:last-child
+		border-bottom-width: 1px
+	&:hover
+		background-color: $grey-lighten	
+.accordion__title
+	position: relative
+	color: $color-blue
+	padding-right: 35px
+	&:before
+		position: absolute
+		right: 5px
+		font-weight: bold 
+.accordion__textual
+	font-size: $fs_m
+	max-width: 1145px
+	margin: 28px 0 49px
+	line-height: 1.75rem 
+.useful-links
+	display: block
+	line-height: 30px
+	margin: 4px 0 41px;
+.useful-links__item
+	display: block
+.accordion__learn-more
+	span
+		color: $color-accent
+.accordion__item_hidden
+	display: none
+	
+		
